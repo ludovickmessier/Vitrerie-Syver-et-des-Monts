@@ -1,0 +1,326 @@
+body>header {
+    @media (max-width: 900px) {
+        padding: 144px 32px 32px 32px !important;
+        gap: 144px;
+    }
+
+    /* Display, Position, Margin and Padding */
+    display: flex;
+    flex-direction: column;
+    gap: 144px;
+
+    padding: 72px 72px 32px 72px;
+
+    div.title {
+        /* Display, Position, Margin and Padding */
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h1 {
+            /* Font */
+            font-size: var(--Title);
+            line-height: 1.3;
+        }
+    }
+
+    nav {
+
+        /* Mobile menu button */
+        #menu-button {
+            /* Display, Position, Margin and Padding */
+            display: none;
+
+            cursor: pointer;
+
+            /* Background and border */
+            background-color: transparent;
+            border: none;
+
+            @media (prefers-color-scheme: dark) {
+                filter: brightness(10);
+            }
+
+            @media (prefers-color-scheme: light) {
+                filter: brightness(0);
+            }
+        }
+
+        #close-menu-button {
+            /* Display, Position, Margin and Padding */
+            display: none;
+            position: absolute;
+
+            top: 64px;
+            right: 104px;
+
+            cursor: pointer;
+
+            /* Background and border */
+            background-color: transparent;
+            border: none;
+
+
+            filter: brightness(10);
+        }
+
+        ul {
+            animation: mobile-menu-drop 0.4s ease-in-out;
+
+            /* Display, Position, Margin and Padding */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 24px;
+
+            padding: 10px 0;
+
+            /* All */
+            li {
+                font-size: var(--Body);
+            }
+
+            /* All but soumission */
+            li:not(.soumission) {
+                margin-right: 8px;
+            }
+
+            /* Soumission */
+            li.soumission {
+                /* Display, Position, Margin and Padding */
+                margin-left: auto;
+                padding: 8px 16px;
+                /* Font */
+                font-weight: 700;
+                /* Background and Border */
+                border: 4px solid var(--MainTextColor);
+                cursor: pointer;
+            }
+
+            /* Soumission when active */
+            li.soumission.active {
+                /* Background and Border */
+                background-color: var(--MainTextColor);
+                color: var(--SecondaryTextColor) !important;
+            }
+
+            /* All active but soumission */
+            li.active:not(.soumission) {
+                text-decoration: underline;
+                font-weight: 700;
+                text-underline-offset: 4px;
+            }
+
+            /* Facebook button */
+            li.facebook {
+                padding: 4px;
+                height: 100%;
+                width: auto;
+
+                background-color: #0866FF;
+                border: 4px solid var(--MainTextColor);
+
+                /* Link inside */
+                a {
+                    display: flex;
+                    height: 100%;
+                }
+
+                /* Reduce the image size */
+                img {
+                    transform: scale(0.7);
+                }
+            }
+
+        }
+
+
+    }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+
+        /* Navigation */
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 32px;
+
+            z-index: 10;
+
+            width: calc(100% - 64px);
+
+            /* Mobile menu button */
+            #menu-button {
+                /* Display, Position, Margin and Padding */
+                display: block;
+            }
+
+            /* Closing animation */
+            ul.menu-closing {
+                /* Preserve the open menu layout */
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 32px;
+
+                padding: 64px 32px;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 100vw;
+                height: auto;
+
+                background-color: rgb(44, 44, 44, 0.7);
+                backdrop-filter: blur(32px);
+
+                /* Closing animation */
+                animation: mobile-menu-close-animation 0.2s ease-in-out forwards;
+                pointer-events: none;
+
+                /* Font */
+                * {
+                    font-size: var(--MobileNavigation) !important;
+                    color: var(--SecondaryTextColor);
+
+                    @media (prefers-color-scheme: dark) {
+                        color: var(--MainTextColor);
+                    }
+
+                    /* Since the background is dark */
+                }
+
+                /* Do not show the Facebook button mobile (subject to change) */
+                li.facebook {
+                    /* Display, Position, Margin and Padding */
+                    display: none;
+                }
+
+                /* Hides the button when in the menu */
+                #menu-button {
+                    /* Display, Position, Margin and Padding */
+                    display: none;
+                }
+
+                li.soumission {
+                    display: none;
+                }
+            }
+
+            /* When the menu is opened (Javascript adds a class when the mobile menu button is clicked). */
+            ul.menu-open {
+                #close-menu-button {
+                    display: block;
+                }
+
+                animation: mobile-menu-open-animation 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+
+                /* Display, Position, Margin and Padding */
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                /* On the left */
+                gap: 32px;
+
+                padding: 64px 32px;
+
+                /* Menu to the top */
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 100vw;
+                height: auto;
+
+                /* Background and border */
+                background-color: rgb(44, 44, 44, 0.7);
+                backdrop-filter: blur(32px);
+                /* Blurs the background */
+
+                /* Font */
+                * {
+                    font-size: var(--MobileNavigation) !important;
+                    color: var(--SecondaryTextColor);
+
+                    @media (prefers-color-scheme: dark) {
+                        color: var(--MainTextColor);
+                    }
+
+                    /* Since the background is dark */
+                }
+
+                li.soumission {
+                    /* Display, Position, Margin and Padding */
+                    margin: 0;
+                    padding: 0;
+                    /* Background and border */
+                    background-color: transparent;
+                    border: none !important;
+                    /* Font */
+                    font-weight: inherit;
+                }
+
+                /* Do not show the Facebook button mobile (subject to change) */
+                li.facebook {
+                    /* Display, Position, Margin and Padding */
+                    margin: 20px 0;
+                }
+
+                /* Hides the button when in the menu */
+                #menu-button {
+                    /* Display, Position, Margin and Padding */
+                    display: none;
+                }
+            }
+
+            /* When the menu is not opened (closed), hides all but soumission button (Call to action...) */
+            ul:not(.menu-open, .menu-closing) {
+                li:not(.soumission) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes mobile-menu-open-animation {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes mobile-menu-close-animation {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    #menu-button.fade-in,
+    ul:not(.menu-open, .menu-closing) li.soumission.fade-in {
+        animation: fade-in 0.2s ease-in-out forwards;
+    }
+}
