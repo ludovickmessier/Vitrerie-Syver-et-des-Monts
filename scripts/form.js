@@ -248,7 +248,7 @@ function formatData() {
         city: cityInput.value.trim(),
         name: nameInput.value.trim(),
         email: emailInput.value.trim(),
-        descriptionProjet: document.getElementById("project-description").value.trim(),
+        descriptionProjet: document.getElementById("projet-description").value.trim(),
         dimensions: document.getElementById("dimensions").value.trim(),
         images: [...selectedImages]
     };
