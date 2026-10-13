@@ -1,21 +1,55 @@
 
 const params = new URLSearchParams(window.location.search);
 const requestedSection = params.get("section");
-
+//8 before , 14
 const sections = {
     "Douches": [
         ["/images/douches/douche-en-verre-1.jpg", "Douche en verre"],
         ["/images/douches/douche-en-verre-2.jpg", "Douche en verre"],
         ["/images/douches/douche-en-verre-3.jpg", "Douche en verre"],
         ["/images/douches/douche-en-verre-4.jpg", "Douche en verre"],
-        ["/images/douches/douche-en-verre-5.jpg", "Douche en verre"]
+        ["/images/douches/douche-en-verre-5.jpg", "Douche en verre"],
+        ["/images/douches/douche-en-verre-6.jpeg", "Douche en verre"],
+        ["/images/douches/douche-en-verre-7.jpg", "Douche en verre"],
+        ["/images/douches/douche-en-verre-8.jpg", "Douche en verre"],
+        ["/images/douches/douche-en-verre-9.jpg", "Douche en verre"]
     ],
     "Fenêtres": [
         ["/images/fenetres/fenetre-1.jpg", "Fenêtre"],
-        ["/images/fenetres/fenetre-2.jpg", "Fenêtre"]
+        ["/images/fenetres/fenetre-2.jpg", "Fenêtre"],
+        ["/images/fenetres/fenetre-3.jpg", "Fenêtre"]
     ],
     "Portes": [
         ["/images/portes/porte-en-verre-1.jpg", "Porte en verre"]
+    ],
+    "Cloisons": [
+        ["/images/cloisons/cloison-en-verre-1.jpg", "Cloison en verre"],
+        ["/images/cloisons/cloison-en-verre-2.jpeg", "Cloison en verre"],
+        ["/images/cloisons/cloison-en-verre-3.jpeg", "Cloison en verre"]
+    ],
+    "Celliers": [
+        ["/images/celliers/cellier-1.jpeg", "Cellier en verre"],
+        ["/images/celliers/cellier-2.jpg", "Cellier en verre"],
+        ["/images/celliers/cellier-3.jpg", "Cellier en verre"]
+    ],
+    "Garde-corps": [
+        ["/images/garde-corps/garde-corps-1.jpg", "Garde corps en verre"],
+        ["/images/garde-corps/garde-corps-1.jpg", "Garde corps en verre"],
+        ["/images/garde-corps/garde-corps-1.jpg", "Garde corps en verre"]
+
+    ],
+    "Rampes": [
+        ["/images/rampes/rampe-en-verre-1.jpg", "Rampe en verre"],
+        ["/images/rampes/rampe-en-verre-2.jpeg", "Rampe en verre"],
+        ["/images/rampes/rampe-en-verre-3.jpeg", "Rampe en verre"],
+        ["/images/rampes/rampe-en-verre-4.jpeg", "Rampe en verre"],
+        ["/images/rampes/rampe-en-verre-5.jpeg", "Rampe en verre"],
+        ["/images/rampes/rampe-en-verre-6.jpg", "Rampe en verre"],
+        ["/images/rampes/rampe-en-verre-7.jpg", "Rampe en verre"],
+        ["/images/rampes/rampe-en-verre-8.jpg", "Rampe en verre"]
+    ],
+    "Commercial": [
+        ["/images/commercial/commercial-1.jpg", "Commercial"]
     ]
 };
 

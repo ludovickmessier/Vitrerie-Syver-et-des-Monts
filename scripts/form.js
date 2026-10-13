@@ -285,18 +285,23 @@ async function sendData() {
         });
 
         if (!response.ok) {
+            confirmSend(nameInput.value, false)
             throw new Error(`Erreur HTTP : ${response.status}`);
         }
 
         const result = await response.json();
         if (!result.success) {
+            confirmSend(nameInput.value, false)
             throw new Error(result.error || "L'envoi a échoué.");
+            
         }
 
         console.log("Soumission envoyée avec succès.");
+        confirmSend(nameInput.value, true)
         console.log(result);
     } catch (error) {
         console.error("Erreur lors de l'envoi :", error);
+        confirmSend(nameInput.value, false)
     }
 }
 
@@ -304,3 +309,12 @@ form.addEventListener("submit", async (e) => {
     e.preventDefault();
     await sendData();
 });
+
+function confirmSend(name, success) {
+    const params = new URLSearchParams({
+        nom: name,
+        success: success
+    });
+    
+    window.location.replace(`/soumission/confirmation/?${params}`);
+}
