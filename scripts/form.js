@@ -1,4 +1,4 @@
-/* V tue october 13 10:59*/
+/* V tue october 13 11:05*/
 
 import * as verify from "./utilities/verification.js";
 
@@ -243,7 +243,7 @@ window.addEventListener("drop", event => {
 
 /* Formatting to send */
 
-const API_URL = "https://www.api.syverdesmonts.com"
+const API_URL = "https://api.syverdesmonts.com"
 /* V tue october 13 10:59*/
 function formatData() {
     const formatted = {
