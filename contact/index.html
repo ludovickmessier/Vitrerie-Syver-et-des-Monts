@@ -28,11 +28,38 @@
                             src="/images/logo/logo-facebook.svg" alt="Facebook"></a></li>
             </ul>
         </nav>
+
+        <div class="title">
+            <h1>Contactez-nous</h1>
+            <h2>Que vous ayez un projet en tête ou simplement quelques questions, Notre équipe est là pour vous
+                conseiller et vous accompagner dans vos démarches.</h2>
+        </div>
     </header>
 
     <main>
         <p class="breadcrumb-navigation"><a href="/"><img src="/images/icons/home.svg" alt="Accueil"></a>/ Contact</p>
-        
+
+        <form id="contact-form" action="">
+            <section>
+                <h2>Contact</h2>
+
+                <div class="input-container">
+                    <input type="text" name="nom" id="name" placeholder="Nom">
+                </div>
+
+                <div class="input-container">
+                    <input type="email" name="courriel" id="email" placeholder="Courriel">
+                </div>
+            </section>
+
+            <section>
+                <h2>Message</h2>
+
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+            </section>
+
+            <input class="disabled" type="submit" value="Envoyer">
+        </form>
     </main>
 
     <footer>
@@ -55,16 +82,17 @@
                     </a>
                 </p>
             </address>
-            
+
             <p class="rbq">RBQ : 5612-7079-01</p>
         </section>
 
         <section id="mentions">
-            <p>Ce site web est une création de Ludesign | <a href="https://ludesign.ca">Ludesign.ca</a></p>
+            <p>Ce site web est une création de Ludesign<br><a href="https://ludesign.ca">Ludesign.ca</a></p>
             <p>&copy; 2026 — Vitrerie Syver et des Monts</p>
         </section>
     </footer>
     <script src="/scripts/main.js" type="module"></script>
+    <script src="/scripts/form/contact-form.js" type="module"></script>
 </body>
 
 </html>

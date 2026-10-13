@@ -31,12 +31,13 @@
 
         <div class="title">
             <h1></h1>
-            <h2>Merci, <span id="nom-client"></span>un membre de notre équipe vous contactera sous peu.</h2>
+            <h2></h2>
         </div>
     </header>
 
     <main>
-        <p class="breadcrumb-navigation"><a href="/"><img src="/images/icons/home.svg" alt="Accueil"></a>/ Soumission / Confirmation
+        <p class="breadcrumb-navigation"><a href="/"><img src="/images/icons/home.svg" alt="Accueil"></a>/ Soumission /
+            Confirmation
         </p>
 
         <p><a href="/">Retourner à l'accueil</a></p>
@@ -67,33 +68,13 @@
         </section>
 
         <section id="mentions">
-            <p>Ce site web est une création de Ludesign | <a href="https://ludesign.ca">Ludesign.ca</a></p>
+            <p>Ce site web est une création de Ludesign<br><a href="https://ludesign.ca">Ludesign.ca</a></p>
             <p>&copy; 2026 — Vitrerie Syver et des Monts</p>
         </section>
     </footer>
-    <script src="/scripts/form.js" type="module"></script>
+
     <script src="/scripts/main.js" type="module"></script>
-
-    <script>
-       
-const params = new URLSearchParams(window.location.search);
-
-const success = params.get("success") === "true";
-const nom = params.get("nom");
-
-const h1 = document.querySelector("div.title > h1");
-const h2 = document.querySelector("div.title > h2");
-
-if (success) {
-    h1.textContent = "Votre soumission a été envoyée";
-    h2.textContent = `Merci, ${nom}, un membre de notre équipe vous contactera sous peu.`;
-} else {
-    h1.textContent = "Un problème s'est produit.";
-    h2.textContent = "Un problème s'est produit de notre côté. Veuillez réessayer plus tard.";
-}
-
-
-    </script>
+    <script src="/scripts/form/form-confirmation.js" type="module"></script>
 </body>
 
 </html>

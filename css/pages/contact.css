@@ -1,0 +1,109 @@
+form {
+    /* Display, Position, Margin and Padding */
+    width: 70%;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+
+    input,
+    label,
+    p,
+    textarea {
+        color: var(--MainTextColor);
+    }
+
+    section {
+        /* Display, Position, Margin and Padding */
+        margin: 50px 0;
+    }
+
+    input {
+        /* Display, Position, Margin and Padding */
+        width: 100%;
+        padding: 0;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        /* Display, Position, Margin and Padding */
+        margin: 16px 0;
+        padding: 12px 0;
+
+        /* Background and border */
+        background-color: transparent;
+        border-bottom: 2px solid var(--MainTextColor);
+        outline: none;
+
+        /* Font */
+        font-size: var(--Body);
+    }
+
+    #name {
+        /* Font */
+        text-transform: capitalize;
+    }
+
+    textarea {
+        /* Font */
+        font-size: var(--Body);
+
+        /* Background and border */
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid var(--MainTextColor);
+        border-radius: 0;
+        outline: none;
+
+        resize: none;
+    }
+
+    p.message {
+        /* Font */
+        color: var(--Red);
+        font-weight: 500;
+        letter-spacing: 2%;
+    }
+
+    input.wrong {
+        /* Background and border */
+        border-bottom-color: var(--Red) !important;
+    }
+
+    input[type="submit"] {
+        /* Display, Position, Margin and Padding */
+        width: 70%;
+        padding: 10px 16px;
+
+        @media (max-width: 900px) {
+            width: 100%;
+            padding: 16px;
+        }
+
+        /* Background and border */
+        background-color: var(--MainTextColor);
+        border: 3px solid var(--MainTextColor);
+
+        /* Font */
+        color: var(--SecondaryTextColor);
+        font-size: var(--Body);
+        font-weight: 700;
+
+
+        cursor: pointer;
+
+    }
+
+    input[type="submit"].disabled {
+        opacity: .4;
+        cursor: not-allowed;
+    }
+
+}
+
+p.disclaimer {
+    text-align: justify;
+    width: 100%;
+    font-size: 0.8em;
+    letter-spacing: normal;
+}

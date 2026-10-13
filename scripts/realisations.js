@@ -1,70 +1,82 @@
-
 const params = new URLSearchParams(window.location.search);
 const requestedSection = params.get("section");
-//8 before , 14
+
+const allButtonName = "Toutes nos réalisations";
+
+const imagesFolder = '/images/realisations/';
+
 const sections = {
     "Douches": [
-        ["/images/douches/douche-en-verre-1.jpg", "Douche en verre"],
-        ["/images/douches/douche-en-verre-2.jpg", "Douche en verre"],
-        ["/images/douches/douche-en-verre-3.jpg", "Douche en verre"],
-        ["/images/douches/douche-en-verre-4.jpg", "Douche en verre"],
-        ["/images/douches/douche-en-verre-5.jpg", "Douche en verre"],
-        ["/images/douches/douche-en-verre-6.jpeg", "Douche en verre"],
-        ["/images/douches/douche-en-verre-7.jpg", "Douche en verre"],
-        ["/images/douches/douche-en-verre-8.jpg", "Douche en verre"],
-        ["/images/douches/douche-en-verre-9.jpg", "Douche en verre"]
+        [`${imagesFolder}douches/douche-en-verre-1.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-2.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-3.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-4.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-5.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-6.jpeg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-7.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-8.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-9.jpg`, "Douche en verre"]
     ],
-    "Fenêtres": [
-        ["/images/fenetres/fenetre-1.jpg", "Fenêtre"],
-        ["/images/fenetres/fenetre-2.jpg", "Fenêtre"],
-        ["/images/fenetres/fenetre-3.jpg", "Fenêtre"]
-    ],
+
     "Portes": [
-        ["/images/portes/porte-en-verre-1.jpg", "Porte en verre"]
+        [`${imagesFolder}portes/porte-en-verre-1.jpg`, "Porte en verre"]
     ],
+
+    "Fenêtres": [
+        [`${imagesFolder}fenetres/fenetre-1.jpg`, "Fenêtre"],
+        [`${imagesFolder}fenetres/fenetre-2.jpg`, "Fenêtre"],
+        [`${imagesFolder}fenetres/fenetre-3.jpg`, "Fenêtre"]
+    ],
+
     "Cloisons": [
-        ["/images/cloisons/cloison-en-verre-1.jpg", "Cloison en verre"],
-        ["/images/cloisons/cloison-en-verre-2.jpeg", "Cloison en verre"],
-        ["/images/cloisons/cloison-en-verre-3.jpeg", "Cloison en verre"]
+        [`${imagesFolder}cloisons/cloison-en-verre-1.jpg`, "Cloison en verre"],
+        [`${imagesFolder}cloisons/cloison-en-verre-2.jpeg`, "Cloison en verre"],
+        [`${imagesFolder}cloisons/cloison-en-verre-3.jpeg`, "Cloison en verre"]
     ],
+
     "Celliers": [
-        ["/images/celliers/cellier-1.jpeg", "Cellier en verre"],
-        ["/images/celliers/cellier-2.jpg", "Cellier en verre"],
-        ["/images/celliers/cellier-3.jpg", "Cellier en verre"]
+        [`${imagesFolder}celliers/cellier-1.jpeg`, "Cellier en verre"],
+        [`${imagesFolder}celliers/cellier-2.jpg`, "Cellier en verre"],
+        [`${imagesFolder}celliers/cellier-3.jpg`, "Cellier en verre"]
     ],
+
     "Garde-corps": [
-        ["/images/garde-corps/garde-corps-1.jpg", "Garde corps en verre"],
-        ["/images/garde-corps/garde-corps-1.jpg", "Garde corps en verre"],
-        ["/images/garde-corps/garde-corps-1.jpg", "Garde corps en verre"]
+        [`${imagesFolder}garde-corps/garde-corps-1.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}garde-corps/garde-corps-2.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}garde-corps/garde-corps-3.jpg`, "Garde corps en verre"]
 
     ],
+
     "Rampes": [
-        ["/images/rampes/rampe-en-verre-1.jpg", "Rampe en verre"],
-        ["/images/rampes/rampe-en-verre-2.jpeg", "Rampe en verre"],
-        ["/images/rampes/rampe-en-verre-3.jpeg", "Rampe en verre"],
-        ["/images/rampes/rampe-en-verre-4.jpeg", "Rampe en verre"],
-        ["/images/rampes/rampe-en-verre-5.jpeg", "Rampe en verre"],
-        ["/images/rampes/rampe-en-verre-6.jpg", "Rampe en verre"],
-        ["/images/rampes/rampe-en-verre-7.jpg", "Rampe en verre"],
-        ["/images/rampes/rampe-en-verre-8.jpg", "Rampe en verre"]
+        [`${imagesFolder}rampes/rampe-en-verre-1.jpg`, "Rampe en verre"],
+        [`${imagesFolder}rampes/rampe-en-verre-2.jpeg`, "Rampe en verre"],
+        [`${imagesFolder}rampes/rampe-en-verre-3.jpeg`, "Rampe en verre"],
+        [`${imagesFolder}rampes/rampe-en-verre-4.jpeg`, "Rampe en verre"],
+        [`${imagesFolder}rampes/rampe-en-verre-5.jpeg`, "Rampe en verre"],
+        [`${imagesFolder}rampes/rampe-en-verre-6.jpg`, "Rampe en verre"],
+        [`${imagesFolder}rampes/rampe-en-verre-7.jpg`, "Rampe en verre"],
+        [`${imagesFolder}rampes/rampe-en-verre-8.jpg`, "Rampe en verre"]
     ],
+
     "Commercial": [
-        ["/images/commercial/commercial-1.jpg", "Commercial"]
+        [`${imagesFolder}commercial/commercial-1.jpg`, "Commercial"]
     ]
 };
 
 const buttonsContainer = document.getElementById("buttons");
-const imagesGrid = document.getElementById("images-grid");
-const overlay = document.getElementById("image-overlay");
 
+const imagesGrid = document.getElementById("images-grid");
+
+const imageOverlay = document.getElementById("image-overlay");
 let fullscreenImage = null;
 
-// 1. Create the category buttons
+/* Create the category buttons */
+
 function createButtons() {
     const allButton = document.createElement("button");
 
     allButton.id = "all-button";
-    allButton.textContent = "Toutes nos réalisations";
+    allButton.textContent = allButtonName;
 
     buttonsContainer.appendChild(allButton);
 
@@ -78,7 +90,8 @@ function createButtons() {
     });
 }
 
-// 2. Display the images for a category
+/* Display the images for a category */
+
 function displayImages(sectionName = null) {
     imagesGrid.innerHTML = "";
 
@@ -99,7 +112,8 @@ function displayImages(sectionName = null) {
     });
 }
 
-// 3. Select a category
+/* Select a category */
+
 function selectSection(sectionName = null) {
     const buttons = buttonsContainer.querySelectorAll("button");
 
@@ -118,25 +132,28 @@ function selectSection(sectionName = null) {
     displayImages(sectionName);
 }
 
-// 4. Open an image in fullscreen
+/* Open an image in fullscreen */
+
 function openFullscreen(img) {
     if (fullscreenImage) return;
 
     fullscreenImage = img;
     img.classList.add("fullscreen");
-    overlay.classList.add("active");
+    imageOverlay.classList.add("active");
 }
 
-// 5. Close the fullscreen preview
+/* Close the fullscreen preview */
+
 function closeFullscreen() {
     if (!fullscreenImage) return;
 
     fullscreenImage.classList.remove("fullscreen");
+    imageOverlay.classList.remove("active");
     fullscreenImage = null;
-    overlay.classList.remove("active");
 }
 
-// 6. Handle category button clicks
+/* Handle category button clicks */
+
 buttonsContainer.addEventListener("click", event => {
     const button = event.target.closest("button");
 
@@ -153,7 +170,8 @@ buttonsContainer.addEventListener("click", event => {
     }
 });
 
-// 7. Handle image clicks
+/* Handle image clicks */
+
 imagesGrid.addEventListener("click", event => {
     const img = event.target.closest("img");
 
@@ -166,17 +184,20 @@ imagesGrid.addEventListener("click", event => {
     }
 });
 
-// 8. Close when clicking outside the image
-overlay.addEventListener("click", closeFullscreen);
+/* Close when clicking outside the image */
 
-// Also close with Escape
+imageOverlay.addEventListener("click", closeFullscreen);
+
+/* Also close with Escape */
+
 document.addEventListener("keydown", event => {
     if (event.key === "Escape") {
         closeFullscreen();
     }
 });
 
-// 9. Initialize the page
+/* Initialize the page */
+
 createButtons();
 
 if (requestedSection && Object.hasOwn(sections, requestedSection)) {
