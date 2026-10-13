@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url("reset.css");
+@import url("variables.css");
+
+@import url("components/header.css");
+@import url("components/footer.css");
+
+html,
+body {
+    background-color: #FAFAFA;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #2C2C2C;
+    }
+}
+
+/* Fonts */
+
+* {
+    /* Font */
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+p,
+li {
+    /* Font */
+    color: var(--MainTextColor);
+    letter-spacing: 2%;
+}
+
+h1 {
+    /* Font */
+    font-size: var(--Title);
+    font-weight: 800;
+}
+
+h2 {
+    /* Font */
+    font-size: var(--Subtitle);
+    font-weight: 700;
+}
+
+p,
+li {
+    /* Font */
+    font-size: var(--Body);
+}
+
+p {
+    line-height: normal;
+}
+
+main {
+    /* Display, Position, Margin and Padding */
+    display: flex;
+    flex-direction: column;
+
+    gap: 72px;
+    padding: 72px;
+
+    background-color: #FAFAFA;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #2C2C2C;
+    }
+
+    .breadcrumb-navigation {
+        /* Display, Position, Margin and Padding */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+
+        /* Font */
+        color: var(--AccentTextColor);
+        font-size: 1.1em;
+
+        cursor: pointer;
+
+        img {
+            /* Display, Position, Margin and Padding */
+            display: block;
+            height: 1em;
+            width: auto;
+
+            @media (prefers-color-scheme: dark) {
+                filter: brightness(5);
+            }
+
+        }
+
+    }
+
+    section {
+        /* Display, Position, Margin and Padding */
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+        padding: 32px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+    }
+}
