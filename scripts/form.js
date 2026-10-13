@@ -1,3 +1,5 @@
+/* V tue october 13 10:59*/
+
 import * as verify from "./utilities/verification.js";
 
 const messages = {
@@ -242,7 +244,7 @@ window.addEventListener("drop", event => {
 /* Formatting to send */
 
 const API_URL = "https://www.api.syverdesmonts.com"
-
+/* V tue october 13 10:59*/
 function formatData() {
     const formatted = {
         city: cityInput.value.trim(),
