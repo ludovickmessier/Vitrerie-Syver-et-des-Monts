@@ -5,6 +5,9 @@ const allButtonName = "Toutes nos réalisations";
 
 const imagesFolder = '/images/realisations/';
 
+let touchStartX = 0;
+let touchStartY = 0;
+
 const sections = {
     "Douches": [
         [`${imagesFolder}douches/douche-en-verre-1.jpg`, "Douche en verre"],
@@ -254,3 +257,99 @@ if (requestedSection && Object.hasOwn(sections, requestedSection)) {
 } else {
     selectSection();
 }
+
+
+/* Navigate between fullscreen images on mobile */
+
+
+let isAnimating = false;
+
+function changeFullscreenImage(direction) {
+    if (!fullscreenImage || isAnimating) return;
+
+    const images = [...imagesGrid.querySelectorAll("img")];
+    const currentIndex = images.indexOf(fullscreenImage);
+    const nextIndex = currentIndex + direction;
+
+    // Don't go beyond the first or last image
+    if (nextIndex < 0 || nextIndex >= images.length) return;
+
+    isAnimating = true;
+
+    const currentImage = fullscreenImage;
+    const nextImage = images[nextIndex];
+
+    // Animate the current image out
+    currentImage.classList.add(
+        direction > 0 ? "swipe-out-left" : "swipe-out-right"
+    );
+
+    currentImage.addEventListener("animationend", function handleExit() {
+        currentImage.removeEventListener("animationend", handleExit);
+
+        currentImage.classList.remove(
+            "fullscreen",
+            "swipe-out-left",
+            "swipe-out-right"
+        );
+
+        // Position the next image fullscreen
+        fullscreenImage = nextImage;
+        nextImage.classList.add("fullscreen");
+
+        // Animate it in from the opposite side
+        nextImage.classList.add(
+            direction > 0 ? "swipe-in-left" : "swipe-in-right"
+        );
+
+        nextImage.addEventListener("animationend", function handleEnter() {
+            nextImage.removeEventListener("animationend", handleEnter);
+
+            nextImage.classList.remove(
+                "swipe-in-left",
+                "swipe-in-right"
+            );
+
+            isAnimating = false;
+        });
+    });
+}
+
+
+document.addEventListener("touchstart", event => {
+    if (!fullscreenImage) return;
+
+    touchStartX = event.changedTouches[0].clientX;
+    touchStartY = event.changedTouches[0].clientY;
+}, { passive: true });
+
+document.addEventListener("touchend", event => {
+    if (!fullscreenImage) return;
+
+    // Only enable swiping on touch devices
+    if (!window.matchMedia("(pointer: coarse)").matches) return;
+
+    const touchEndX = event.changedTouches[0].clientX;
+    const touchEndY = event.changedTouches[0].clientY;
+
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
+
+    // Require a clear horizontal swipe
+    if (
+        Math.abs(deltaX) < 50 ||
+        Math.abs(deltaX) < Math.abs(deltaY)
+    ) {
+        return;
+    }
+
+    event.preventDefault();
+
+    if (deltaX < 0) {
+        // Swipe left: next image
+        changeFullscreenImage(1);
+    } else {
+        // Swipe right: previous image
+        changeFullscreenImage(-1);
+    }
+}, { passive: false });
