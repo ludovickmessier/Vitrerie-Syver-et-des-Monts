@@ -138,3 +138,78 @@ main {
     -webkit-backdrop-filter: blur(20px);
     z-index: 999;
 }
+
+@media (pointer: coarse) {
+    img.fullscreen {
+        touch-action: pan-y;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+}
+
+
+/* Fullscreen image swipe animations */
+
+.images-grid img.fullscreen {
+    will-change: transform, opacity;
+}
+
+.images-grid img.fullscreen.swipe-out-left {
+    animation: swipeOutLeft 0.18s ease-in forwards;
+}
+
+.images-grid img.fullscreen.swipe-out-right {
+    animation: swipeOutRight 0.18s ease-in forwards;
+}
+
+.images-grid img.fullscreen.swipe-in-left {
+    animation: swipeInLeft 0.22s ease-out;
+}
+
+.images-grid img.fullscreen.swipe-in-right {
+    animation: swipeInRight 0.22s ease-out;
+}
+
+@keyframes swipeOutLeft {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: translate(calc(-50% - 100vw), -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes swipeOutRight {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: translate(calc(-50% + 100vw), -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes swipeInLeft {
+    from {
+        transform: translate(calc(-50% + 100vw), -50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes swipeInRight {
+    from {
+        transform: translate(calc(-50% - 100vw), -50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
