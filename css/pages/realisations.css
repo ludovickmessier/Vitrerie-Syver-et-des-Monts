@@ -105,6 +105,7 @@ main {
         height: 280px;
         object-fit: cover;
         display: block;
+        cursor: pointer;
     }
 
     /* Tablet */
