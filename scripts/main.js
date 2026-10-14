@@ -94,3 +94,14 @@ navigationList.querySelectorAll("a").forEach(link => {
         });
     });
 });
+
+/* Fix the li soumission empty click */
+
+const soumissionButton = document.querySelector("body>header nav ul li.soumission");
+const soumissionButtonA = document.querySelector("body>header nav ul li.soumission a");
+
+soumissionButton.addEventListener("click", (e) => {
+    if (e.target !== soumissionButtonA) {
+        window.location.href = "/soumission/";
+    }
+});
