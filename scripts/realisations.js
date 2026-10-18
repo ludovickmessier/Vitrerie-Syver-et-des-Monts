@@ -27,20 +27,18 @@ const sections = {
         [`${imagesFolder}douches/douche-en-verre-15.jpeg`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-16.JPG`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-17.jpeg`, "Douche en verre"],
-
+        [`${imagesFolder}douches/douche-en-verre-18.jpeg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-19.jpg`, "Douche en verre"]
     ],
 
     "Portes": [
         [`${imagesFolder}portes/porte-en-verre-1.jpg`, "Porte en verre"],
         [`${imagesFolder}portes/porte-en-verre-2.jpg`, "Porte en verre"],
         [`${imagesFolder}portes/porte-en-verre-3.jpg`, "Porte en verre"],
-        [`${imagesFolder}portes/porte-en-verre-4.jpg`, "Porte en verre"],
+        [`${imagesFolder}portes/porte-en-verre-4.jpeg`, "Porte en verre"],
         [`${imagesFolder}portes/porte-en-verre-5.jpg`, "Porte en verre"],
         [`${imagesFolder}portes/porte-en-verre-6.jpg`, "Porte en verre"],
-        [`${imagesFolder}portes/porte-en-verre-7.jpg`, "Porte en verre"],
-        [`${imagesFolder}portes/porte-en-verre-8.jpg`, "Porte en verre"],
-        [`${imagesFolder}portes/porte-en-verre-9.jpeg`, "Porte en verre"]
-
+        [`${imagesFolder}portes/porte-en-verre-7.jpg`, "Porte en verre"]
     ],
 
     "Fenêtres": [
@@ -52,43 +50,42 @@ const sections = {
     "Cloisons": [
         [`${imagesFolder}cloisons/cloison-en-verre-1.jpg`, "Cloison en verre"],
         [`${imagesFolder}cloisons/cloison-en-verre-2.jpeg`, "Cloison en verre"],
-        [`${imagesFolder}cloisons/cloison-en-verre-3.jpeg`, "Cloison en verre"],
+        [`${imagesFolder}cloisons/cloison-en-verre-3.jpg`, "Cloison en verre"],
         [`${imagesFolder}cloisons/cloison-en-verre-4.jpg`, "Cloison en verre"],
         [`${imagesFolder}cloisons/cloison-en-verre-5.jpg`, "Cloison en verre"],
-        [`${imagesFolder}cloisons/cloison-en-verre-6.jpg`, "Cloison en verre"],
+        [`${imagesFolder}cloisons/cloison-en-verre-6.jpeg`, "Cloison en verre"],
         [`${imagesFolder}cloisons/cloison-en-verre-7.jpg`, "Cloison en verre"],
-        [`${imagesFolder}cloisons/cloison-en-verre-8.jpg`, "Cloison en verre"],
-        [`${imagesFolder}cloisons/cloison-en-verre-9.jpg`, "Cloison en verre"],
-        [`${imagesFolder}cloisons/cloison-en-verre-10.jpeg`, "Cloison en verre"],
-        [`${imagesFolder}cloisons/cloison-en-verre-11.jpg`, "Cloison en verre"]
+        [`${imagesFolder}cloisons/cloison-en-verre-8.jpg`, "Cloison en verre"]
     ],
 
     "Celliers": [
         [`${imagesFolder}celliers/cellier-1.jpeg`, "Cellier en verre"],
         [`${imagesFolder}celliers/cellier-2.jpg`, "Cellier en verre"],
-        [`${imagesFolder}celliers/cellier-3.jpg`, "Cellier en verre"]
-    ],
-
-    "Garde-corps": [
-        [`${imagesFolder}garde-corps/garde-corps-1.jpg`, "Garde corps en verre"],
-        [`${imagesFolder}garde-corps/garde-corps-2.jpg`, "Garde corps en verre"],
-        [`${imagesFolder}garde-corps/garde-corps-3.jpg`, "Garde corps en verre"],
-        [`${imagesFolder}garde-corps/garde-corps-4.jpeg`, "Garde corps en verre"]
+        [`${imagesFolder}celliers/cellier-3.jpg`, "Cellier en verre"],
+        [`${imagesFolder}celliers/cellier-4.jpg`, "Cellier en verre"],
+        [`${imagesFolder}celliers/cellier-5.jpg`, "Cellier en verre"]
 
     ],
 
-    "Rampes": [
-        [`${imagesFolder}rampes/rampe-en-verre-1.jpg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-2.jpeg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-3.jpeg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-4.jpeg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-5.jpeg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-6.jpg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-7.jpg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-8.jpg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-9.jpg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-10.jpeg`, "Rampe en verre"],
-        [`${imagesFolder}rampes/rampe-en-verre-11.JPG`, "Rampe en verre"]
+    "Rampes et Garde-corps": [
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-1.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-2.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-3.jpeg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-4.jpeg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-5.jpeg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-6.jpeg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-7.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-8.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-9.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-10.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-11.jpeg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-12.JPG`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-13.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-14.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-15.jpeg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-16.jpg`, "Garde corps en verre"],
+
+
     ],
 
     "Commercial": [
@@ -96,22 +93,33 @@ const sections = {
         [`${imagesFolder}commercial/commercial-2.jpg`, "Commercial"],
         [`${imagesFolder}commercial/commercial-3.jpg`, "Commercial"],
         [`${imagesFolder}commercial/commercial-4.jpg`, "Commercial"],
-        [`${imagesFolder}commercial/commercial-5.jpg`, "Commercial"]
+        [`${imagesFolder}commercial/commercial-5.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-6.jpeg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-7.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-8.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-9.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-10.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-11.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-12.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-13.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-14.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-15.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-16.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-17.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-18.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-19.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-20.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-21.jpg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-22.jpg`, "Commercial"]
     ],
 
     "Miroirs": [
         [`${imagesFolder}miroirs/miroir-1.jpg`, "Miroir"],
         [`${imagesFolder}miroirs/miroir-2.jpg`, "Miroir"],
         [`${imagesFolder}miroirs/miroir-3.jpg`, "Miroir"],
-        [`${imagesFolder}miroirs/miroir-4.jpg`, "Miroir"]
-    ],
-
-    "Autres réalisations": [
-        [`${imagesFolder}autres/autre-1.jpg`, "Image"],
-        [`${imagesFolder}autres/autre-2.jpg`, "Image"],
-        [`${imagesFolder}autres/autre-3.jpg`, "Image"],
-        [`${imagesFolder}autres/autre-4.jpg`, "Image"],
-        [`${imagesFolder}autres/autre-5.jpg`, "Image"]
+        [`${imagesFolder}miroirs/miroir-4.jpg`, "Miroir"],
+        [`${imagesFolder}miroirs/miroir-5.jpg`, "Miroir"],
+        [`${imagesFolder}miroirs/miroir-6.jpg`, "Miroir"]
     ]
 };
 

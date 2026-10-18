@@ -277,8 +277,7 @@ async function sendData() {
         });
 
         if (!response.ok) {
-            confirmSend(nameInput.value, false)
-            throw new Error(`HTTP Error : ${response.status}`);
+            throw new Error(`HTTP Error: ${response.status}`);
         }
 
         const result = await response.json();

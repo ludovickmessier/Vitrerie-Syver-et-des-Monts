@@ -103,7 +103,7 @@ main {
     .images-grid img {
         width: 100%;
         height: 280px;
-        object-fit: contain;
+        object-fit:cover;
         display: block;
         cursor: pointer;
     }
@@ -212,4 +212,18 @@ main {
         transform: translate(-50%, -50%);
         opacity: 1;
     }
+}
+
+
+
+/* Image follows the finger */
+
+.images-grid img.fullscreen.dragging {
+    transition: none !important;
+}
+
+/* Smooth snap-back when the swipe is cancelled */
+
+.images-grid img.fullscreen.snapping-back {
+    transition: transform 0.25s ease-out;
 }
