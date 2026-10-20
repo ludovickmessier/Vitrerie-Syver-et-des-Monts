@@ -15,19 +15,19 @@ const sections = {
         [`${imagesFolder}douches/douche-en-verre-3.jpg`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-4.jpg`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-5.jpg`, "Douche en verre"],
-        [`${imagesFolder}douches/douche-en-verre-6.jpeg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-6.jpg`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-7.jpg`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-8.jpg`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-9.jpg`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-10.jpg`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-11.jpg`, "Douche en verre"],
-        [`${imagesFolder}douches/douche-en-verre-12.jpeg`, "Douche en verre"],
-        [`${imagesFolder}douches/douche-en-verre-13.jpeg`, "Douche en verre"],
-        [`${imagesFolder}douches/douche-en-verre-14.jpeg`, "Douche en verre"],
-        [`${imagesFolder}douches/douche-en-verre-15.jpeg`, "Douche en verre"],
-        [`${imagesFolder}douches/douche-en-verre-16.JPG`, "Douche en verre"],
-        [`${imagesFolder}douches/douche-en-verre-17.jpeg`, "Douche en verre"],
-        [`${imagesFolder}douches/douche-en-verre-18.jpeg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-12.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-13.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-14.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-15.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-16.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-17.jpg`, "Douche en verre"],
+        [`${imagesFolder}douches/douche-en-verre-18.jpg`, "Douche en verre"],
         [`${imagesFolder}douches/douche-en-verre-19.jpg`, "Douche en verre"]
     ],
 
@@ -35,7 +35,7 @@ const sections = {
         [`${imagesFolder}portes/porte-en-verre-1.jpg`, "Porte en verre"],
         [`${imagesFolder}portes/porte-en-verre-2.jpg`, "Porte en verre"],
         [`${imagesFolder}portes/porte-en-verre-3.jpg`, "Porte en verre"],
-        [`${imagesFolder}portes/porte-en-verre-4.jpeg`, "Porte en verre"],
+        [`${imagesFolder}portes/porte-en-verre-4.jpg`, "Porte en verre"],
         [`${imagesFolder}portes/porte-en-verre-5.jpg`, "Porte en verre"],
         [`${imagesFolder}portes/porte-en-verre-6.jpg`, "Porte en verre"],
         [`${imagesFolder}portes/porte-en-verre-7.jpg`, "Porte en verre"]
@@ -49,17 +49,17 @@ const sections = {
 
     "Cloisons": [
         [`${imagesFolder}cloisons/cloison-en-verre-1.jpg`, "Cloison en verre"],
-        [`${imagesFolder}cloisons/cloison-en-verre-2.jpeg`, "Cloison en verre"],
+        [`${imagesFolder}cloisons/cloison-en-verre-2.jpg`, "Cloison en verre"],
         [`${imagesFolder}cloisons/cloison-en-verre-3.jpg`, "Cloison en verre"],
         [`${imagesFolder}cloisons/cloison-en-verre-4.jpg`, "Cloison en verre"],
         [`${imagesFolder}cloisons/cloison-en-verre-5.jpg`, "Cloison en verre"],
-        [`${imagesFolder}cloisons/cloison-en-verre-6.jpeg`, "Cloison en verre"],
+        [`${imagesFolder}cloisons/cloison-en-verre-6.jpg`, "Cloison en verre"],
         [`${imagesFolder}cloisons/cloison-en-verre-7.jpg`, "Cloison en verre"],
         [`${imagesFolder}cloisons/cloison-en-verre-8.jpg`, "Cloison en verre"]
     ],
 
     "Celliers": [
-        [`${imagesFolder}celliers/cellier-1.jpeg`, "Cellier en verre"],
+        [`${imagesFolder}celliers/cellier-1.jpg`, "Cellier en verre"],
         [`${imagesFolder}celliers/cellier-2.jpg`, "Cellier en verre"],
         [`${imagesFolder}celliers/cellier-3.jpg`, "Cellier en verre"],
         [`${imagesFolder}celliers/cellier-4.jpg`, "Cellier en verre"],
@@ -70,19 +70,18 @@ const sections = {
     "Rampes et Garde-corps": [
         [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-1.jpg`, "Garde corps en verre"],
         [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-2.jpg`, "Garde corps en verre"],
-        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-3.jpeg`, "Garde corps en verre"],
-        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-4.jpeg`, "Garde corps en verre"],
-        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-5.jpeg`, "Garde corps en verre"],
-        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-6.jpeg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-3.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-5.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-6.jpg`, "Garde corps en verre"],
         [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-7.jpg`, "Garde corps en verre"],
         [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-8.jpg`, "Garde corps en verre"],
         [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-9.jpg`, "Garde corps en verre"],
         [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-10.jpg`, "Garde corps en verre"],
-        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-11.jpeg`, "Garde corps en verre"],
-        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-12.JPG`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-11.jpg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-12.jpg`, "Garde corps en verre"],
         [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-13.jpg`, "Garde corps en verre"],
         [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-14.jpg`, "Garde corps en verre"],
-        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-15.jpeg`, "Garde corps en verre"],
+        [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-15.jpg`, "Garde corps en verre"],
         [`${imagesFolder}rampes-et-garde-corps/rampe-et-garde-corps-16.jpg`, "Garde corps en verre"],
 
 
@@ -94,7 +93,7 @@ const sections = {
         [`${imagesFolder}commercial/commercial-3.jpg`, "Commercial"],
         [`${imagesFolder}commercial/commercial-4.jpg`, "Commercial"],
         [`${imagesFolder}commercial/commercial-5.jpg`, "Commercial"],
-        [`${imagesFolder}commercial/commercial-6.jpeg`, "Commercial"],
+        [`${imagesFolder}commercial/commercial-6.jpg`, "Commercial"],
         [`${imagesFolder}commercial/commercial-7.jpg`, "Commercial"],
         [`${imagesFolder}commercial/commercial-8.jpg`, "Commercial"],
         [`${imagesFolder}commercial/commercial-9.jpg`, "Commercial"],
@@ -165,7 +164,6 @@ function displayImages(sectionName = null) {
 
             img.src = src;
             img.alt = alt;
-            img.loading = "lazy";
 
             imagesGrid.appendChild(img);
         });
