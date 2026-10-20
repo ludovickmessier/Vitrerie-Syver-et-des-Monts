@@ -164,6 +164,8 @@ function displayImages(sectionName = null) {
 
             img.src = src;
             img.alt = alt;
+                        img.loading = "lazy";
+
 
             imagesGrid.appendChild(img);
         });
