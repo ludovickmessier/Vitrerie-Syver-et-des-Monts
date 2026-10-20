@@ -76,7 +76,7 @@ main {
         gap: 2px;
 
         /* Font */
-        color: var(--AccentTextColor);
+        color: var(--MainTextColor);
         font-size: 1.1em;
 
         cursor: pointer;
