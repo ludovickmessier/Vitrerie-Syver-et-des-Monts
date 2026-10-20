@@ -7,7 +7,7 @@ const success = params.get("success") === "true";
 const errorMessage = params.get("errorMessage") || "";
 
 if (errorMessage) {
-    console.log("Error : " + errorMessage);
+    console.error(errorMessage);
 }
 
 const h1 = document.querySelector("body>header div.title>h1");
