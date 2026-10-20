@@ -161,11 +161,10 @@ function displayImages(sectionName = null) {
     Object.values(selectedSections).forEach(images => {
         images.forEach(([src, alt]) => {
             const img = document.createElement("img");
-
+            
+            img.loading = "lazy";
             img.src = src;
             img.alt = alt;
-                        img.loading = "lazy";
-
 
             imagesGrid.appendChild(img);
         });
