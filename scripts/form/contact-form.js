@@ -167,8 +167,9 @@ async function sendData() {
         }
 
         const result = await response.json();
+
         if (!result.success) {
-            confirmSend(nameInput.value, false);
+            confirmSend(nameInput.value, false, error.toString());
             throw new Error(result.error || "The message wasn't sent.");
         }
 
@@ -176,7 +177,7 @@ async function sendData() {
         console.log(result);
     } catch (error) {
         console.error("Error while sending :", error);
-        confirmSend(nameInput.value, false);
+        confirmSend(nameInput.value, false, error.toString());
     }
 }
 
@@ -185,11 +186,12 @@ form.addEventListener("submit", async (e) => {
     await sendData();
 });
 
-function confirmSend(name, success) {
+function confirmSend(name, success, errorMessage = "") {
     const params = new URLSearchParams({
         nom: name,
         type: "message",
-        success: success
+        success: success,
+        errorMessage: errorMessage
     });
 
     window.location.replace(`/contact/confirmation/?${params}`);

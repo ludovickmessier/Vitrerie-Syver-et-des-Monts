@@ -4,6 +4,12 @@ const name = params.get("nom") || "";
 const type = params.get("type") || "message";
 const success = params.get("success") === "true";
 
+const errorMessage = params.get("errorMessage") || "";
+
+if (errorMessage) {
+    console.log("Error : " + errorMessage);
+}
+
 const h1 = document.querySelector("body>header div.title>h1");
 const h2 = document.querySelector("body>header div.title>h2");
 
